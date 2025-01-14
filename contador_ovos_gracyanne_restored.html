@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aposta de Ovos da Gracyanne no BBB25</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Gloria Hallelujah', cursive;
+            text-align: center;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #000;
+            margin-top: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+            background-image: url('https://noticiasdatv.uol.com.br/media/_versions/artigos_2024/gracyanne-barbosa-bbb25-rep-globo_fixed_large.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 300px;
+        }
+        input[type="number"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            background-color: #ffb700;
+            transform: scale(1.1);
+        }
+        .egg-image {
+            margin-top: 20px;
+        }
+        img {
+            width: 150px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .confirmation {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #4CAF50;
+        }
+        label {
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça sua Aposta: Quantos Ovos a Gracyanne Barbosa vai Comer no BBB25?</h1>
+    <div class="egg-image">
+        <img src="https://i.em.com.br/TkNYSS0BaGr6CHdghb-XFF8VM8c=/750x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/05/01/1486301/caixa-de-ovos-com-cascas-azuis-brancas-e-vermelhas_1_72830.jpg" alt="Ovo">
+    </div>
+    <form action="https://formspree.io/f/mlddvrje" method="POST" onsubmit="playConfirmationSound(); showConfirmation(); return false;">
+        <label for="aposta">Quantos ovos você acha que ela vai comer?</label>
+        <input type="number" id="aposta" name="aposta" placeholder="Digite sua aposta" required>
+
+        <label for="email">Seu e-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <button type="submit">Enviar Aposta</button>
+    </form>
+    <div class="confirmation">Obrigado pela sua aposta! Vamos ver quem acerta! 🥚</div>
+    <p style="margin-top: 20px;">Com Gracyanne, o galinheiro nunca fica vazio! 🐔🍳</p>
+    <footer>
+        <p>Essa aposta foi criada pelo time da <a href="https://www.inconvencional.com.br" target="_blank">Inconvencional</a> ⭐</p>
+    </footer>
+    <audio id="confirmationSound" src="https://www.fesliyanstudios.com/play-mp3/6297"></audio>
+    <script>
+        function showConfirmation() {
+            document.querySelector('.confirmation').style.display = 'block';
+        }
+        function playConfirmationSound() {
+            var sound = document.getElementById('confirmationSound');
+            sound.play();
+        }
+    </script>
+</body>
+</html>
